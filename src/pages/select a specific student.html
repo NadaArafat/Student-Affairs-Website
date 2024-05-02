@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="SS.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/CSS_navBar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/CSS_Select_specific.css">
+    <script src="../JS/select_ST.js"></script>
+</head>
+
+<body style="font-family: 'Cairo', sans-serif;">
+    <div class="navbar">
+        <img class="logo" src="../CSS/logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="HomePage.html" title="Go To Home Page"> <i class="bi bi-house-door-fill"></i> Home</a>
+                </li>
+                <li class="active">
+                    <a href="#"> <i class="bi bi-people-fill"></i> Students </a>
+                    </i>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li><a href="phase1_AddStudent.html">Add Student</a></li>
+                            <li class="hover-me">
+                                Edit Student <i class="bi bi-caret-right"></i> </a>
+                                <div class="sub-menu2">
+                                    <ul>
+                                        <li><a href="Phase1_Update.html">Update</a></li>
+                                        <li><a href="Phase1_Delete.html">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="active"><a href="Select a specific student.html" title=" Select a specific student">Select a specific student</a></li>
+                            <li><a href="view all active-inactive students.html" title="view all Active\Inactive Students' table">Active\Inactive Students</a></li>
+                            <li><a href="Phase1_Search For Active Student.html" title="Search for active students">Search</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="Sign_in.html" title="Sign in"> <i class="bi bi-key-fill"></i> Sign In</a>
+                </li>
+                <li>
+                    <a href="mailto:n.1762002@gmail.com" title="Send us an email"> <i class="bi bi-envelope-fill"></i> Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br><br><br><br><br>
+    <form onsubmit="checkValidation()">
+        <div class="container">
+            <div class="title">Select a specific Student:</div>
+            <div class="input-box">
+                <label for="sname">Student name:</label><br>
+                <input type="text" id="sname" name="Stu_Name"><br>
+            </div>
+
+            <div class="input-box">
+                <label for="ID">Student ID:</label><br>
+                <input type="text" id="ID" name="Stu_Id"><br><br>
+            </div>
+            <div class="input-box">
+                <label label for="depts">Choose a department</label>
+                <select id="depts" name="depts" required >
+                    <option value="IS">IS</option>
+                    <option value="AI">AI</option>
+                    <option value="IT">IT</option>
+                    <option value="DS">DS</option>
+                    <option value="DS">CS</option>
+                </select><br><br>
+            </div>
+
+            <div class="INP">
+                <input type="Submit" value="Submit"><br><br>
+            </div>
+            <div class="INP">
+                <button><a class="btn" href="view all active-inactive students.html"
+                        style="color: black;cursor: default;text-decoration: none;">View student table</a> </button>
+            </div>
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>

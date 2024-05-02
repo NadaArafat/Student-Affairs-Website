@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Student</title>
+    <link rel="stylesheet" href="../CSS/CSS_AddStu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <script src="../JS/add_Update_ST.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/CSS_navBar.css">
+
+</head>
+
+<body style="font-family: 'Cairo', sans-serif;">
+    <div class="navbar">
+        <img class ="logo" src="../CSS/logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li > <a href="HomePage.html" title="Go To Home Page" > <i class="bi bi-house-door-fill"></i> Home</a> </li>
+                <li class="active">  <a href="#" > <i class="bi bi-people-fill"></i> Students </a> </i>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li class="active"><a href="phase1_AddStudent.html">Add Student</a></li>
+                            <li class="hover-me">
+                                Edit Student <i class="bi bi-caret-right"></i> </a>
+                                <div class="sub-menu2">
+                                    <ul>
+                                        <li><a href="Phase1_Update.html">Update</a></li>
+                                        <li><a href="Phase1_Delete.html">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="Select a specific student.html" title=" Select a specific student">Select a specific student</a></li>
+                            <li><a href="view all active-inactive students.html" title="view all Active\Inactive Students' table">Active\Inactive Students</a></li>
+                            <li><a href="Phase1_Search For Active Student.html" title="Search for active students">Search</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li> <a href="Sign_in.html" title="Sign in" >  <i class="bi bi-key-fill"></i> Sign In</a> </li>
+                <li> <a href="mailto:n.1762002@gmail.com" title="Send us an email" > <i class="bi bi-envelope-fill"></i> Contact us</a>  </li>
+            </ul>
+        </nav>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="form">
+        <div class="container">
+            <div class="title">Enter the following information to add student:</div>
+            <form onsubmit="checkform();" method="post" action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <label for="name" class="details">Student Name</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input-box">
+                        <label for="id" class="details">Student ID</label>
+                        <input type="text" id="id">
+                    </div>
+                    <div class="input-box">
+                        <label for="mail" class="details"> Email</label>
+                        <input type="email" id="mail">
+                    </div>
+                    <div class="input-box">
+                        <label for="date" class="details">Birthdate </label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="input-box">
+                        <label for="mob" class="details"> Mobile Number</label>
+                        <input type="text" id="mob">
+                    </div>
+                    <div class="input-box">
+                        <label for="gpa" class="details">Student GPA</label>
+                        <input type="text" id="gpa">
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <p id="Gend" class="gender-title">Choose Gender</p><br>
+                    <div id="Gender" class="category">
+                        <input type="radio" name="gender" value="male" id="male" > 
+                        <label for="male" class="gender">Male</label>
+                        <input type="radio" name="gender" value="female" id="female" >
+                        <label for="female" class="gender">Female</label>
+                    </div>
+                </div>
+                <br>
+                <div class="status-details">
+                    <p id="stat" class="status-title">Choose Status</p><br>
+                    <div id="Status" class="category">
+                        <input type="radio" name="activity" value="act" id="act">
+                        <label for="act">Active</label>
+                        <input type="radio" name="activity" value="inact" id="inact">
+                        <label for="inact">Inactive</label>
+                    </div>
+                </div>
+                <br>
+                <div class="level-details">
+                    <label for="lvl"> Choose your level </label>
+                    <select id="lvl">
+                        <option value="First">First level</option>
+                        <option value="Second">Second level</option>
+                        <option value="Third">Third level</option>
+                        <option value="Fourth">Fourth level</option>
+                    </select>
+                </div>
+                <br>
+                <div class="department-details">
+                    <label for="dep">Choose your department </label>
+                    <select id="dep">
+                        <option value="IS">IS</option>
+                        <option value="DS">DS</option>
+                        <option value="AI">AI</option>
+                        <option value="CS">CS</option>
+                        <option value="IT">IT</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Add Student" id="sub_button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
